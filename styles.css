@@ -47,8 +47,8 @@ main {
 }
 
 .page_header__nav-list,
-.catalog__filter_list,
-.painting__list,
+.filter__list,
+.catalog__list,
 .about_us__painters_list,
 .page_footer__nav_list,
 .page_footer__social_list,
@@ -168,39 +168,33 @@ main {
     cursor: pointer;
 }
 
-.catalog {
-    min-height: 1546px;
+.filter {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 70px;
-}
-
-/* .catalog__wrapper {
-    max-width: 1110px;
-} */
-
-.catalog__filter {
-    display: flex;
     justify-content: space-between;
+    max-width: 1100px;
+    /* padding-left: 54px; */
+    margin: 70px 165px 30px;
 }
 
-.catalog__title {
+.filter__title {
+    display: block;
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(44, 45, 53, 1);
     font-size: 40px;
     font-weight: 500;
     line-height: 44px;
+    margin: 0;
 }
 
-.catalog__filter_list {
+.filter__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
 }
 
-.catalog__filter_button {
+.filter__button {
     background-color: rgba(212, 232, 217, 1);
     border: none;
     border-radius: 20px;
@@ -212,7 +206,7 @@ main {
     cursor: pointer;
 }
 
-.catalog__filter_button__current {
+.filter__button__current {
     background-color:rgba(55, 107, 68, 1);
     border: none;
     border-radius: 20px;
@@ -224,7 +218,15 @@ main {
     cursor: pointer;
 }
 
-.painting__list {
+.catalog {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 165px;
+    margin-right: 165px; */
+    margin-bottom: 70px;;
+}
+
+.catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -233,46 +235,60 @@ main {
     margin: 0;
 }
 
-.painting__item {
+.catalog__item {
     max-width: 350px;
-    min-height: 730px;
+    max-height: 730px;
     padding: 20px;
     background-color: rgba(225, 237, 230, 1);
 }
 
-.painting__author {
+/* .catalog__painting {
+    margin-bottom: 20px;
+    object-fit: cover;
+} */
+
+.catalog__author {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(134, 146, 139, 1);
     font-size: 18px;
     font-weight: 500;
-    line-height: 22px; 
+    line-height: 22px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px; 
 }
 
-.painting__name {
+.catalog__name {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(44, 45, 53, 1);
     font-size: 30px;
     font-weight: 500;
     line-height: 35px;
+    margin: 0;
+    margin-bottom: 8px; 
 }
 
-.painting__info {
+.catalog__info {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(44, 45, 53, 1);
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
+    margin: 0; 
+    margin-bottom: 30px; 
 }
 
-.painting__price {
+.catalog__price {
     font-family: "Raleway", "Arial", sans-serif;
     color: rgba(89, 141, 102, 1);
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
+    margin: 0; 
+    margin-bottom: 20px; 
 }
 
-.painting__button {
+.catalog__button {
     background-color: rgba(225, 237, 230, 1);
     border: 1px solid rgba(89, 141, 102, 1);
     font-family: "Raleway", "Arial", sans-serif;
