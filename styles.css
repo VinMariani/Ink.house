@@ -247,6 +247,11 @@ main {
     margin: 0;
 }
 
+/* .catalog__main-list {
+    display: grid;
+    column-gap: 30px;
+} */
+
 .catalog__item {
     max-width: 350px;
     max-height: 730px;
