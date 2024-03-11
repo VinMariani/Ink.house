@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body class="page">
+<body>
+    <div class="page_body">
     <header class="page_header">
         <div class="page_header__logo_wrapper">
             <a class="page_header__link" href="#"><img class="page_header__img" src="./images/icons/logo.svg"
@@ -65,60 +66,287 @@
         </section>
 
         <section class="catalog">
-            <ul class="catalog__list">
-                <li class="catalog__item catalog__item-france">
-                    <img class="catalog__img" src="./images/paintings/france/marsel_russo.jpg" width="310"
-                        height="422" alt="Картина Марселя Руссо Охота Амура">
-                    <p class="catalog__author">Марсель Руссо</p>
-                    <h3 class="catalog__name">Охота Амура</h3>
-                    <p class="catalog__info">Холст, масло (50х80)</p>
-                    <p class="catalog__price">14 500 руб</p>
-                    <button class="button catalog__button" type="button">В корзину</button>
+            <ul class="catalog__main-list" id="tabsCountries">
+                <li class="catalog__main-item active">
+                    <ul class="catalog__list">
+                        <li class="catalog__item catalog__item-france">
+                            <img
+                                class="catalog__img"
+                                src="./images/paintings/france/marsel_russo.jpg"
+                                width="310"
+                                height="422"
+                                alt="Картина Марселя Руссо Охота Амура"
+                            >
+                            <p class="catalog__author">Марсель Руссо</p>
+                            <h3 class="catalog__name">Охота Амура</h3>
+                            <p class="catalog__info">Холст, масло (50х80)</p>
+                            <p class="catalog__price">14 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/france/anri_selin.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Анри Селинa Дама с собачкой"
+                                >
+                            </a>
+                            <p class="catalog__author">Анри Селин</p>
+                            <h3 class="catalog__name">Дама с собачкой</h3>
+                            <p class="catalog__info">Акрил, бумага (50х80)</p>
+                            <p class="catalog__price">16 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/france/fransua_dupon.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Франсуа Дюпонa Процедура"
+                                >
+                            </a>
+                            <p class="catalog__author">Франсуа Дюпон</p>
+                            <h3 class="catalog__name">Процедура</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">20 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/france/lui_detush.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Луи Детушa Роза"
+                                >
+                            </a>
+                            <p class="catalog__author">Луи Детуш</p>
+                            <h3 class="catalog__name">Роза</h3>
+                            <p class="catalog__info">Бумага, акрил (50х80)</p>
+                            <p class="catalog__price">14 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/france/fransua_dupon_2.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Франсуа Дюпонa Птичья трапеза"
+                                >
+                            </a>
+                            <p class="catalog__author">Франсуа Дюпон</p>
+                            <h3 class="catalog__name">Птичья трапеза</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">22 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/france/pier_morange.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Пьер Моранжa Пейзаж с рыбой"
+                                >
+                            </a>
+                            <p class="catalog__author">Пьер Моранж</p>
+                            <h3 class="catalog__name">Пейзаж с рыбой</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">20 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                    </ul>
                 </li>
-                <li class="catalog__item catalog__item-france">
-                    <a class="catalog__link" href="#"><img src="./images/paintings/france/anri_selin.jpg"
-                            width="310" height="422" alt="Картина Анри Селинa Дама с собачкой"></a>
-                    <p class="catalog__author">Анри Селин</p>
-                    <h3 class="catalog__name">Дама с собачкой</h3>
-                    <p class="catalog__info">Акрил, бумага (50х80) </p>
-                    <p class="catalog__price">16 500 руб</p>
-                    <button class="button catalog__button" type="button">В корзину</button>
+                <li class="catalog__main-item">
+                    <ul class="catalog__list">
+                        <li class="catalog__item catalog__item-germany">
+                            <img
+                                class="catalog__img"
+                                src="./images/paintings/germany/kurt_werner.jpg"
+                                width="310"
+                                height="422"
+                                alt="Картина Курт Вернерa Над городом"
+                            >
+                            <p class="catalog__author">Курт Вернер</p>
+                            <h3 class="catalog__name">Над городом</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">16 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/germany/max_richter.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Макс Рихтерa Птенцы"
+                                >
+                            </a>
+                            <p class="catalog__author">Макс Рихтер</p>
+                            <h3 class="catalog__name">Птенцы</h3>
+                            <p class="catalog__info">Холст, масло (50х80)</p>
+                            <p class="catalog__price">14 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/germany/martin_mayer.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Мартин Майерa Среди листьев"
+                                >
+                            </a>
+                            <p class="catalog__author">Мартин Майер</p>
+                            <h3 class="catalog__name">Среди листьев</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">20 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    class="catalog__painting"
+                                    src="./images/paintings/germany/german_bekker.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Герман Беккер Яркая птица"
+                                >
+                            </a>
+                            <p class="catalog__author">Герман Беккер</p>
+                            <h3 class="catalog__name">Яркая птица</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">13 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/germany/wulf_bauer.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Вульф Бауэрa Дятлы"
+                                >
+                            </a>
+                            <p class="catalog__author">Вульф Бауэр</p>
+                            <h3 class="catalog__name">Дятлы</h3>
+                            <p class="catalog__info">Бумага, акрил (50х80)</p>
+                            <p class="catalog__price">20 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/germany/walter_hartman.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Вальтер Хартманнa Большие воды"
+                                >
+                            </a>
+                            <p class="catalog__author">Вальтер Хартманн</p>
+                            <h3 class="catalog__name">Большие воды</h3>
+                            <p class="catalog__info">Бумага, акрил (50х80)</p>
+                            <p class="catalog__price">23 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                    </ul>
                 </li>
-                <li class="catalog__item catalog__item-france">
-                    <a class="catalog__link" href="#"><img src="./images/paintings/france/fransua_dupon.jpg"
-                            width="310" height="422" alt="Картина Франсуа Дюпонa Процедура"></a>
-                    <p class="catalog__author">Франсуа Дюпон</p>
-                    <h3 class="catalog__name">Процедура</h3>
-                    <p class="catalog__info">Цветная литография (40х60)</p>
-                    <p class="catalog__price">20 000 руб</p>
-                    <button class="button catalog__button" type="button">В корзину</button>
-                </li>
-                <li class="catalog__item catalog__item-france">
-                    <a class="catalog__link" href="#"><img src="./images/paintings/france/lui_detush.jpg"
-                            width="310" height="422" alt="Картина Луи Детушa Роза"></a>
-                    <p class="catalog__author">Луи Детуш</p>
-                    <h3 class="catalog__name">Роза</h3>
-                    <p class="catalog__info">Бумага, акрил (50х80) </p>
-                    <p class="catalog__price">14 500 руб</p>
-                    <button class="button catalog__button" type="button">В корзину</button>
-                </li>
-                <li class="catalog__item catalog__item-france">
-                    <a class="catalog__link" href="#"><img src="./images/paintings/france/fransua_dupon_2.jpg"
-                            width="310" height="422" alt="Картина Франсуа Дюпонa Птичья трапеза"></a>
-                    <p class="catalog__author">Франсуа Дюпон</p>
-                    <h3 class="catalog__name">Птичья трапеза</h3>
-                    <p class="catalog__info">Цветная литография (40х60)</p>
-                    <p class="catalog__price">22 500 руб</p>
-                    <button class="button catalog__button" type="button">В корзину</button>
-                </li>
-                <li class="catalog__item catalog__item-france">
-                    <a class="catalog__link" href="#"><img src="./images/paintings/france/pier_morange.jpg"
-                            width="310" height="422" alt="Картина Пьер Моранжa Пейзаж с рыбой"></a>
-                    <p class="catalog__author">Пьер Моранж</p>
-                    <h3 class="catalog__name">Пейзаж с рыбой</h3>
-                    <p class="catalog__info">Цветная литография (40х60)</p>
-                    <p class="catalog__price">20 000 руб</p>
-                    <button class="button catalog__button" type="button">В корзину</button>
+                <li class="catalog__main-item">
+                    <ul class="catalog__list">
+                        <li class="catalog__item catalog__item-germany">
+                            <img
+                                class="catalog__img"
+                                src="./images/paintings/england/pol_smith.jpg"
+                                width="310"
+                                height="422"
+                                alt="Картина Пол Смитa Дикий зверь"
+                            >
+                            <p class="catalog__author">Пол Смит</p>
+                            <h3 class="catalog__name">Дикий зверь</h3>
+                            <p class="catalog__info">Акварель, бумага (50х80)</p>
+                            <p class="catalog__price">19 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-france">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/england/john_white.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Джонa Уайтa Птенцы"
+                                >
+                            </a>
+                            <p class="catalog__author">Джон Уайт</p>
+                            <h3 class="catalog__name">Скалистый берег</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">17 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/england/jim_watson.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Джимa Уотсон Среди листьев"
+                                >
+                            </a>
+                            <p class="catalog__author">Джим Уотсон</p>
+                            <h3 class="catalog__name">Река и горы</h3>
+                            <p class="catalog__info">Акварель, бумага (50х80)</p>
+                            <p class="catalog__price">20 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    class="catalog__painting"
+                                    src="./images/paintings/england/yudjin_zillion.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Юджинa Зиллионa Яркая птица"
+                                >
+                            </a>
+                            <p class="catalog__author">Юджин Зиллион</p>
+                            <h3 class="catalog__name">Белый попугай</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">15 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/england/erik_gillman.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Эрикa Гиллманa Ночная рыба"
+                                >
+                            </a>
+                            <p class="catalog__author">Эрик Гиллман</p>
+                            <h3 class="catalog__name">Ночная рыба</h3>
+                            <p class="catalog__info">Бумага, акрил (50х80)</p>
+                            <p class="catalog__price">12 500 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                        <li class="catalog__item catalog__item-germany">
+                            <a class="catalog__link" href="#">
+                                <img
+                                    src="./images/paintings/germany/walter_hartman.jpg"
+                                    width="310"
+                                    height="422"
+                                    alt="Картина Альфредa Баррa Рыжий кот"
+                                >
+                            </a>
+                            <p class="catalog__author">Альфред Барр</p>
+                            <h3 class="catalog__name">Рыжий кот</h3>
+                            <p class="catalog__info">Цветная литография (40х60)</p>
+                            <p class="catalog__price">21 000 руб</p>
+                            <button class="button catalog__button" type="button">В корзину</button>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
@@ -277,6 +505,8 @@
             </div>
         </section>
     </footer>
+    <script src="/js/script.js" type="module"></script>
+    </div>
 </body>
 
 </html>

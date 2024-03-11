@@ -33,6 +33,17 @@ html {
     font-display: swap;
 }
 
+/* body {
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.page_body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+} */
+
 body {
     display: flex;
     flex-direction: column;
